@@ -17,9 +17,7 @@ void freeList(Item *);
 int main()  {
     // build a linked list from a text file
     Item *head = buildList();
-    if (head) 
-        printList(head);
-    else
+    if (!head) 
         return 1;
     // search the file
     Item *results;
